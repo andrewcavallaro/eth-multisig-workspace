@@ -1,0 +1,21 @@
+{
+  "name": "contractstuff",
+  "version": "1.0.0",
+  "main": "contract.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "node": "^16.19.0",
+    "solc": "^0.8.19",
+    "web3": "^1.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "start": "tsc  -p . ; node build/contract.js"
+  }
+}

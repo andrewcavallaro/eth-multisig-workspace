@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "start",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "smartStep": true,
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start", "0x211d719b4a732c319c884b355ae422bfd7fa9116"],
+      "skipFiles": ["<node_internals>/**"],
+      "preLaunchTask": "npm: build",
+      "console": "integratedTerminal",
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "test",
+      "env": {
+        "NODE_ENV": "test",
+        "SANCTION_MIN_SCORE": "50"
+      },
+      "smartStep": true,
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["test"],
+      "skipFiles": ["<node_internals>/**"],
+      "preLaunchTask": "npm: build",
+      "console": "integratedTerminal",
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "sls offline",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "smartStep": true,
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["sls", "offline"],
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal",
+      "sourceMaps": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "typescript.format.semicolons": "insert",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true
+}
